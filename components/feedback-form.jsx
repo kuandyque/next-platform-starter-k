@@ -34,7 +34,8 @@ export function FeedbackForm() {
 
     return (
         <div className="w-full md:max-w-md">
-            <Card title="Leave Feedback">
+            <Card title="Оставить отзыв" className="p-6">
+                <p className="mb-4">Ваши отзывы помогут нам улучшить платформу.</p>
                 <form name="feedback" onSubmit={handleFormSubmit} className="flex flex-col gap-3 align-center">
                     <input type="hidden" name="form-name" value="feedback" />
                     <input name="name" type="text" placeholder="Name" required className="input" />
